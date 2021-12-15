@@ -1,0 +1,72 @@
+.section-1{
+    height: 100vh;
+    mix-blend-mode: overlay;    
+    background-color: #0f0d0eef;
+    padding: 25px 120px;
+}
+
+header{
+    @include display(flex, center, space-between, row, none);
+
+    nav{
+        @include display(flex, center, none, row, 40px);
+
+        b{
+            @include font(16px, 400, white);
+        }
+
+        p{
+            @include font(16px, 400, #676767);
+        }
+    }
+
+    .nav2{
+        @include display(flex, center, none, row, 20px);
+
+        .line{
+            width: 1px;
+            height: 19px;
+            background-color: white;
+        }
+    }
+}
+
+main{
+    @include display(flex, center, none, column, 0px);
+
+    .car-about{
+        @include display(flex, center, none, column, 20px);
+
+        h1{
+            @include font(80px, bold, white);
+
+            span{
+                background-color: red;
+                padding: 0 15px;
+                clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+            }
+        }
+
+        p{
+            width: 760px;
+            text-align: center;
+            @include font(16px, 400, #C2C2C2);
+        }
+    }
+
+    .car-image{
+        @include display(flex, center, none, row, 100px);
+
+        .car-info2{
+            @include display(flex, none, none, column, 30px);
+
+            b{
+                @include font(16px, 400, white);
+            }
+    
+            p{
+                @include font(16px, 400, #676767);
+            }
+        }
+    }
+}
