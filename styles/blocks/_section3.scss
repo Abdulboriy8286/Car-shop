@@ -1,0 +1,58 @@
+.section-3{
+    height: 100vh; 
+    background-color: #0f0d0eef;
+    padding: 25px 120px;
+}
+
+.tire2{
+    position: relative;
+    right: -958px;
+    top: -250px;
+    z-index: -1;
+}
+
+.car-about2{
+    @include display(flex, center, none, row, none);
+    margin-top: 60px;
+
+    .car-image2{
+        .car-2{
+            position: relative;
+            left: -120px;
+        }
+    }
+
+    .car-info{
+        @include display(flex, center, none, row, none);
+
+        .info1{
+            @include display(flex, start, none, column, 40px);
+
+            h2{
+                @include font(40px, bold, white);
+            }
+
+            .car-names{
+                @include display(flex, start, none, column, 20px);
+
+                .b{
+                    @include font(16px, 400, white);
+                    text-decoration: none;
+        
+                    &:hover{
+                        color: #676767;
+                    }
+                }
+
+                .p{
+                    @include font(16px, 400, #676767);
+                    text-decoration: none;
+        
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

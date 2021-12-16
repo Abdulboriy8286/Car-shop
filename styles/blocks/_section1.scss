@@ -1,6 +1,5 @@
 .section-1{
-    height: 100vh;
-    mix-blend-mode: overlay;    
+    height: 100vh; 
     background-color: #0f0d0eef;
     padding: 25px 120px;
 }
@@ -11,13 +10,23 @@ header{
     nav{
         @include display(flex, center, none, row, 40px);
 
-        b{
+        .b{
             @include font(16px, 400, white);
+            text-decoration: none;
+
+            &:hover{
+                color: #676767;
+            }
         }
 
-        p{
+        .p{
             @include font(16px, 400, #676767);
-        }
+            text-decoration: none;
+
+            &:hover{
+                color: white;
+            }
+       }
     }
 
     .nav2{
@@ -60,12 +69,22 @@ main{
         .car-info2{
             @include display(flex, none, none, column, 30px);
 
-            b{
+            .b{
                 @include font(16px, 400, white);
+                text-decoration: none;
+
+                &:hover{
+                    color: #676767;
+                }
             }
     
-            p{
+            .p{
                 @include font(16px, 400, #676767);
+                text-decoration: none;
+
+                &:hover{
+                    color: white;
+                }
             }
         }
     }

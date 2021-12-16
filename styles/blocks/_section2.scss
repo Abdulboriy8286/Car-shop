@@ -1,0 +1,154 @@
+.section-2{
+    height: 130vh;  
+    background-color: #0f0d0eef;
+    padding: 25px 120px;
+}
+
+header{
+    @include display(flex, center, space-between, row, none);
+
+    .nav3{
+        @include display(flex, start, none, column, 10px);
+
+        b{
+            @include font(16px, 400, white);
+            text-decoration: none;
+
+            &:hover{
+                color: #676767;
+            }
+        }
+
+        p{
+            @include font(16px, 400, #676767);
+            text-decoration: none;
+
+            &:hover{
+                color: white;
+            }
+        }    
+    }
+
+    .nav4{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.16) -21.07%, rgba(255, 255, 255, 0.02) 120.5%);
+        backdrop-filter: blur(23px);
+        padding: 40px 90px;
+        clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+
+        .info1{
+            @include display(flex, start, none, column, 8px);
+
+            b{
+                @include font(16px, 400, white);
+                text-decoration: none;
+    
+                &:hover{
+                    color: #676767;
+                }
+            }
+    
+            p{
+                @include font(16px, 400, #676767);
+                text-decoration: none;
+    
+                &:hover{
+                    color: white;
+                }
+            }    
+        }
+
+        .line{
+            width: 1px;
+            height: 25px;
+            background-color: #676767;
+        }
+    }
+}
+
+.main2{
+    @include display(flex, center, none, column, none);
+
+    .tire1{
+        position: absolute;
+        top: 550px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .car-about{
+        @include display(flex, center, space-between, row, none);
+        margin-top: 100px;
+
+        .car-info1{
+            @include display(flex, start, none, column, 40px);
+
+            h2{
+                @include font(40px, bold, white);
+            }
+
+            a{
+                background-color: red;
+                padding: 15px;
+                @include display(flex, center, space-between, row, 10px);
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid red;
+                }
+            }
+        }
+
+        .car-info2{
+            @include display(flex, center, none, row, 30px);
+
+            .car-box1{
+                @include display(flex, center, none, column, 30px);    
+
+                .box{
+                    @include display(flex, center, none, column, 30px);
+                    width: 250px;
+                    height: 250px;
+                    padding: 50px 40px;
+                    background: linear-gradient(135.78deg, #FF4E63 -8.21%, #B90712 114.35%);
+    
+                    p{
+                        width: 200px;
+                    }
+                }
+
+                .box1{
+                    @include display(flex, center, none, column, 30px);
+                    width: 250px;
+                    height: 250px;
+                    padding: 50px 40px;
+                    background-color: transparent;
+                    border: 2px solid #676767;
+
+                    p{
+                        width: 200px;
+                    }
+                }
+            }
+
+            .car-box2{
+                @include display(flex, center, none, column, 30px);
+                margin-bottom: 70px;
+
+                .box1{
+                    @include display(flex, center, none, column, 30px);
+                    width: 250px;
+                    height: 250px;
+                    padding: 50px 40px;
+                    background-color: transparent;
+                    border: 2px solid #676767;
+
+                    p{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

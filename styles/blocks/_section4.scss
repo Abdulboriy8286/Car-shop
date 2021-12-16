@@ -1,0 +1,63 @@
+.section-4{
+    height: 152vh; 
+    background-color: #0f0d0eef;
+    padding: 25px 120px;
+}
+
+h2{
+    text-align: center;
+    @include font(40px, 600, white);
+}
+
+.car-about3{
+    @include display(flex, center, space-between, row, none);
+    margin-top: 260px;
+
+    .user{
+        @include display(flex, start, none, column, 30px);
+
+        p{
+            @include font(16px, 400, #676767);
+            width: 300px;
+        }
+
+        a{
+            background-color: red;
+            padding: 15px;
+            @include display(flex, center, space-between, row, 10px);
+            text-decoration: none;
+            color: white;
+
+            &:hover{
+                background-color: transparent;
+                border: 2px solid red;
+            }
+        }
+    }
+
+    .ellipse{
+        position: absolute;
+        left: 430px;
+    }
+
+    .car-3{
+        position: absolute;
+        left: 505px;
+    }
+
+    .car-info{
+        @include display(flex, start, none, column, 40px);
+
+        .info{
+            @include display(flex, start, none, column, 20px);
+
+            b{
+                @include font(50px, 600, white);
+            }
+
+            p{
+                @include font(20px, 500, white);
+            }
+        }
+    }
+}

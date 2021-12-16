@@ -1,6 +1,5 @@
 .section-1 {
   height: 100vh;
-  mix-blend-mode: overlay;
   background-color: #0f0d0eef;
   padding: 25px 120px;
 }
@@ -39,16 +38,26 @@ header nav {
   gap: 40px;
 }
 
-header nav b {
+header nav .b {
   font-size: 16px;
   font-weight: 400;
   color: white;
+  text-decoration: none;
 }
 
-header nav p {
+header nav .b:hover {
+  color: #676767;
+}
+
+header nav .p {
   font-size: 16px;
   font-weight: 400;
   color: #676767;
+  text-decoration: none;
+}
+
+header nav .p:hover {
+  color: white;
 }
 
 header .nav2 {
@@ -163,16 +172,691 @@ main .car-image .car-info2 {
   gap: 30px;
 }
 
-main .car-image .car-info2 b {
+main .car-image .car-info2 .b {
   font-size: 16px;
   font-weight: 400;
   color: white;
+  text-decoration: none;
 }
 
-main .car-image .car-info2 p {
+main .car-image .car-info2 .b:hover {
+  color: #676767;
+}
+
+main .car-image .car-info2 .p {
   font-size: 16px;
   font-weight: 400;
   color: #676767;
+  text-decoration: none;
+}
+
+main .car-image .car-info2 .p:hover {
+  color: white;
+}
+
+.section-2 {
+  height: 130vh;
+  background-color: #0f0d0eef;
+  padding: 25px 120px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: none;
+}
+
+header .nav3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+header .nav3 b {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+header .nav3 b:hover {
+  color: #676767;
+}
+
+header .nav3 p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #676767;
+  text-decoration: none;
+}
+
+header .nav3 p:hover {
+  color: white;
+}
+
+header .nav4 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-21.07%, rgba(255, 255, 255, 0.16)), color-stop(120.5%, rgba(255, 255, 255, 0.02)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.16) -21.07%, rgba(255, 255, 255, 0.02) 120.5%);
+  -webkit-backdrop-filter: blur(23px);
+          backdrop-filter: blur(23px);
+  padding: 40px 90px;
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+header .nav4 .info1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+header .nav4 .info1 b {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+header .nav4 .info1 b:hover {
+  color: #676767;
+}
+
+header .nav4 .info1 p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #676767;
+  text-decoration: none;
+}
+
+header .nav4 .info1 p:hover {
+  color: white;
+}
+
+header .nav4 .line {
+  width: 1px;
+  height: 25px;
+  background-color: #676767;
+}
+
+.main2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: none;
+}
+
+.main2 .tire1 {
+  position: absolute;
+  top: 550px;
+  left: 0;
+  z-index: -1;
+}
+
+.main2 .car-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: none;
+  margin-top: 100px;
+}
+
+.main2 .car-about .car-info1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.main2 .car-about .car-info1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.main2 .car-about .car-info1 a {
+  background-color: red;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.main2 .car-about .car-info1 a:hover {
+  background-color: transparent;
+  border: 2px solid red;
+}
+
+.main2 .car-about .car-info2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+
+.main2 .car-about .car-info2 .car-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.main2 .car-about .car-info2 .car-box1 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 250px;
+  height: 250px;
+  padding: 50px 40px;
+  background: linear-gradient(135.78deg, #FF4E63 -8.21%, #B90712 114.35%);
+}
+
+.main2 .car-about .car-info2 .car-box1 .box p {
+  width: 200px;
+}
+
+.main2 .car-about .car-info2 .car-box1 .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 250px;
+  height: 250px;
+  padding: 50px 40px;
+  background-color: transparent;
+  border: 2px solid #676767;
+}
+
+.main2 .car-about .car-info2 .car-box1 .box1 p {
+  width: 200px;
+}
+
+.main2 .car-about .car-info2 .car-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.main2 .car-about .car-info2 .car-box2 .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 250px;
+  height: 250px;
+  padding: 50px 40px;
+  background-color: transparent;
+  border: 2px solid #676767;
+}
+
+.main2 .car-about .car-info2 .car-box2 .box1 p {
+  width: 200px;
+}
+
+.section-3 {
+  height: 100vh;
+  background-color: #0f0d0eef;
+  padding: 25px 120px;
+}
+
+.tire2 {
+  position: relative;
+  right: -958px;
+  top: -250px;
+  z-index: -1;
+}
+
+.car-about2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: none;
+  margin-top: 60px;
+}
+
+.car-about2 .car-image2 .car-2 {
+  position: relative;
+  left: -120px;
+}
+
+.car-about2 .car-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: none;
+}
+
+.car-about2 .car-info .info1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.car-about2 .car-info .info1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.car-about2 .car-info .info1 .car-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.car-about2 .car-info .info1 .car-names .b {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.car-about2 .car-info .info1 .car-names .b:hover {
+  color: #676767;
+}
+
+.car-about2 .car-info .info1 .car-names .p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #676767;
+  text-decoration: none;
+}
+
+.car-about2 .car-info .info1 .car-names .p:hover {
+  color: white;
+}
+
+.section-4 {
+  height: 152vh;
+  background-color: #0f0d0eef;
+  padding: 25px 120px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.car-about3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: none;
+  margin-top: 260px;
+}
+
+.car-about3 .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.car-about3 .user p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #676767;
+  width: 300px;
+}
+
+.car-about3 .user a {
+  background-color: red;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.car-about3 .user a:hover {
+  background-color: transparent;
+  border: 2px solid red;
+}
+
+.car-about3 .ellipse {
+  position: absolute;
+  left: 430px;
+}
+
+.car-about3 .car-3 {
+  position: absolute;
+  left: 505px;
+}
+
+.car-about3 .car-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.car-about3 .car-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.car-about3 .car-info .info b {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+
+.car-about3 .car-info .info p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.section-5 {
+  height: 90vh;
+  background-color: #0f0d0eef;
+  padding: 35px 120px;
+}
+
+.main3 {
+  background-image: url(/pictures/images/car3.png);
+  height: 420px;
+  width: 1270px;
+  margin-left: -175px;
+  opacity: 0.6;
+  padding: 100px;
+  margin-top: 50px;
+}
+
+.main3 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.main3 h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  margin-left: -120px;
+}
+
+.main3 p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #C2C2C2;
+  width: 450px;
+  margin-left: -120px;
+}
+
+.main3 a {
+  background-color: red;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  margin-left: -120px;
+}
+
+.main3 a:hover {
+  background-color: transparent;
+  border: 2px solid red;
 }
 
 * {
