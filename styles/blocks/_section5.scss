@@ -17,7 +17,7 @@
         @include display (flex, none, none, column, 40px);
     }
 
-    h2{
+    .h2{
         @include font(40px, 600, white);
         margin-left: -120px;
     }
